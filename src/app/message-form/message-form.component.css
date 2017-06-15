@@ -1,0 +1,25 @@
+.form-control{  
+  width: 57%;
+  height: 100%;
+  background-color: rgb(98,110,126);
+  color: WHITE;
+}
+
+.simple {
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+  background-color: rgb(197,57,96);
+}
+
+.all{
+  margin-left: 5px;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+  background-color: rgb(40,183,165);
+}
+
+.inlin{
+  display: inline;
+}

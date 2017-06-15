@@ -1,0 +1,79 @@
+<div class="container fond" style="height: 500px;">
+  <section class="row" style="height: 100%;">
+
+
+    <div class="col-md-2 heightFull nopadding">
+      <app-chanelview-list class="full" *ngIf="openCloseService.chaneList" (notifyParent)="notified($event)"></app-chanelview-list>
+      <app-channel class="full" *ngIf="createChanelDisplay"></app-channel>
+      <div class="full" *ngIf="!openCloseService.chaneList"></div>
+    </div>
+
+
+    <div class="col-md-2 heightFull nopadding">
+
+      <div class="unCinquieme nopadding">
+        <app-chanel-button (display)="printChanelCreation($event)"></app-chanel-button>
+      </div>
+
+      <div class="unCinquieme nopadding">
+        <app-button-chanel-list></app-button-chanel-list>
+      </div>
+
+      <div class="unCinquieme nopadding">
+        <app-message-page [route]="notifChild"></app-message-page>
+      </div>
+
+      <div class="unCinquieme nopadding">
+        <app-button-weather></app-button-weather>
+      </div>
+
+      <div class="unCinquieme nopadding">
+        <button class="nothing feature full nopadding" (click)="logOut()">Logout</button>
+      </div>
+
+    </div>
+
+
+    <div class="col-md-6 heightFull nopadding">
+
+      <div class="unCinquieme nopadding">
+        <h1 class="titre full nopadding">
+          {{title}}
+        </h1>
+      </div>
+
+      <div class="troiCinquieme nopadding">
+        <app-message-list [myRoute]="notifChild"></app-message-list>
+      </div>
+
+      <div class="unCinquieme nopadding">
+        <app-message-form [notifyChildren]="notifChild"></app-message-form>
+      </div>
+
+    </div>
+
+    <div class="col-md-2 full nopadding fin">
+      <app-weather *ngIf="openCloseService.meteo"></app-weather>
+      <div class="nothing" *ngIf="!openCloseService.meteo"></div>
+    </div>
+
+    <!--
+
+    <app-message-page [route]="notifChild"></app-message-page>
+    <div class="chanellist">___Liste des chanels___</div>
+    <app-chanelview-list (notifyParent)="notified($event)"></app-chanelview-list>
+
+    <div class="col-md-10">
+
+      <app-message-list [myRoute]="notifChild"></app-message-list>
+      <app-message-form [notifyChildren]="notifChild"></app-message-form>
+    </div>
+    <app-channel *ngIf="createChanelDisplay">Loading...</app-channel>
+    <div class="bar">
+      <app-bar></app-bar>
+    </div>
+
+    -->
+
+  </section>
+</div>

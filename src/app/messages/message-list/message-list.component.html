@@ -1,0 +1,8 @@
+<div class="messages full">
+<!-- On boucle sur tous les messages de notre liste de messages stockés dans messageList -->
+  <div style="padding: 20px;" *ngFor="let currentMessage of messageList">
+  <!--CurrentMessage est le message courant dans la boucle -->
+  <!--On donne notre message courant en Input (en entrée, parametre) du composant Message qui va lui l'afficher.-->
+    <app-message [message]="currentMessage"></app-message>
+  </div>
+</div>

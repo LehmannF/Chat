@@ -1,0 +1,16 @@
+<div class="col-md-6 col-md-offset-3">
+  <h2>Login</h2>
+  <form name="form" (ngSubmit)="login()" novalidate>
+    <div>
+      <label name="username">Username</label>
+      <input type="text" class="form-control" id="username" required [(ngModel)]="user.username" name="username">
+    </div>
+    <div>
+      <label name="password">Password</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="user.password" required />
+    </div>
+    <div>
+      <button [disabled]="loading" class="btn btn-primary">Login</button>
+    </div>
+  </form>
+</div>

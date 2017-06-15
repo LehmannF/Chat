@@ -1,0 +1,13 @@
+<body>
+<div>
+  <div *ngFor="let currentMessage of stringList">
+    <div *ngIf="verify(currentMessage) == false" class="messagetotal">
+      {{currentMessage}}
+    </div>
+    <strong *ngIf=verify(currentMessage)>
+      <div> {{currentMessage}} </div>
+      <iframe [src]="resault | safe"></iframe><br></strong>
+  </div>
+  <strong class="stron">{{message.from}}</strong>
+</div>
+</body>

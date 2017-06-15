@@ -1,0 +1,29 @@
+.deuxhuitieme{
+  width: 100%;
+  height: 25%;
+}
+
+.unhuitieme{
+  width: 100%;
+  height: 12%
+}
+
+.text{
+  color: white;
+}
+
+input{
+  background-color: rgb(98,110,126);
+  color: WHITE;
+}
+
+button{
+  background-color: #ea6153;
+  width: 100%;
+  height: 100%;
+}
+
+.quatreHuitieme{
+  width: 100%;
+  height: 50%;
+}

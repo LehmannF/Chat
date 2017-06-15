@@ -1,0 +1,23 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+/* You can add global styles to this file, and also import other style files */
+
+.nopadding {
+   padding: 2px !important;
+   margin: 0 !important;
+   border-radius: 5px;
+}
+
+.fond{
+  background-color: rgb(47,61,70);
+  border-radius: 30px;
+}
+
+.full{
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.quart{
+  height: 25% !important;
+  width: 100% !important;
+}

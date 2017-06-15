@@ -1,0 +1,21 @@
+.mess{
+  background-color: WHITE;
+  width: 75%;
+}
+
+.messagepad {
+   padding: 10px !important;
+   margin: 0 !important;
+   border-radius: 7px;
+   word-break: break-all;
+}
+
+.stron{
+  color: white;
+  color: rgb(197,57,96);
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  border-radius: 15px;
+  max-height: 30px;
+}

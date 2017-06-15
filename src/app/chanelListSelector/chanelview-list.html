@@ -1,0 +1,5 @@
+<div class="chan full">
+  <div *ngFor="let currentChanel of chanelService.channelList">
+      <app-chanel-form (notifyParent)="notified($event)" [chanel]="currentChanel"></app-chanel-form>
+  </div>
+</div>
